@@ -51,8 +51,8 @@ NBDay.print()
 
 # 3задача
 class NeDumaem:
-    def area(self)
-    pass
+    def area(self):
+        pass
 class Dumaem(NeDumaem):
     def __init__(self,name,coast,s):
         self.__name=name
@@ -64,6 +64,11 @@ class Dumaem(NeDumaem):
         q = 100 * self.__s / self.__coast
         awnser = 0.7 * q
         print(awnser,"true")
+class OchenDumaem(NeDumaem):
+    def __init__(self, name, coast, s):
+        self.__name = name
+        self.__coast = coast
+        self.__s = s
     def false(self,coast,s):
         self.__coast = coast
         self.__s = s
@@ -76,7 +81,8 @@ class Dumaem(NeDumaem):
 
 
 mb=Dumaem("oleg",10,30)
+nmb=OchenDumaem("oleg",10,30)
 mb.true(12,2)
 # mb.print()
-mb.false(11,11)
+nmb.false(11,11)
 # mb.print()
