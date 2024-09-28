@@ -50,8 +50,10 @@ print("до дня ржения ГГ ММ ДД")
 NBDay.print()
 
 # 3задача
-
-class Dumaem:
+class NeDumaem:
+    def area(self)
+    pass
+class Dumaem(NeDumaem):
     def __init__(self,name,coast,s):
         self.__name=name
         self.__coast=coast
